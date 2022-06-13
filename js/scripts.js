@@ -7,9 +7,9 @@ function Place(location, landmark, season, advice) {
   this.advice = advice;
 }
 
-let portland = new Place("Portland", "Welcome to Portland, Oregon sign", "Fall", "Avoid SE Powell");
-
-
+let portland = new Place("Oregon", "Welcome to Portland, Oregon sign", "Fall", "Avoid SE Powell");
+let edinburgh = new Place("Scotland", "Edinburgh Castle", "Spring", "Avoid the haggis");
+let munich = new Place("Germany", "Olympic Stadium", "Fall", "Avoid Oktoberfest");
 
 
 // UI Logic
