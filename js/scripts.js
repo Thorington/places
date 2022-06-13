@@ -8,8 +8,10 @@ class Places {
   }
 
     // let placeArray = [this.location,this.landmark,this.season,this.advice]
+    
   display() {
     let placeString = this.location + " " + this.landmark + " " + this.season + " " + this.advice;
+  //   let splitString = placeString.split();
     return placeString;
   }
 }
@@ -21,14 +23,22 @@ let munich = new Places("Germany", "Olympic Stadium", "Fall", "Avoid Oktoberfest
 // UI Logic
 
 $(document).ready(function() {
-
-  const listPlace = document.getElementById("place");
-  
-  document.getElementById("place").addEventListener('click', function() {
-    document.getElementById("location").innerHTML = portland.display(); 
+// 
+  document.getElementById("portland").addEventListener('click', function() {
+    document.getElementById("location").innerHTML = portland.display();
   });
-})
-
+}); 
+  // const portlandArray = [] 
+//   Object.values(portland);
+//   const listPortland = document.getElementById("portland").addEventListener('click', function() {;
+//     portlandArray.forEach((item)=> {
+//       let li = document.createElement("li");
+//       li.innerText = item;
+//       portlandArray.appendChild(li);
+//     })
+//   })
+// })
+// })
 // '<ul><li>' + placeArray.join("</li><li>"); + '</li></ul>';
 
 // function displayContactDetails(addressBookToDisplay) {
